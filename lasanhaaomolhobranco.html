@@ -1,45 +1,162 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Receita de Lasanha ao Molho Branco</title>
     <link rel="stylesheet" href="src/style/style.css">
+    <title>Lasanha ao Molho Branco</title>
+</head>
+<body>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="src/style/style.css">
+    <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receita de Lasanha ao Molho Branco</title>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <title>Senai-Fit</title>
+  <style>
+    :root {
+      --color-primary-1: #fff9ea;
+      --color-primary-2: #ffe8b4;
+      --color-primary-3: #f8d477;
+      --color-primary-4: #ffe100;
+      --color-primary-5: #ffcb45;
+      --color-primary-6: #e9a209;
+      --color-neutral-0: #fff;
+      --color-neutral-1: #1d1d1d;
+    }
+
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      background-color: var(--color-primary-1);
+      color: var(--color-neutral-1);
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--color-primary-4), var(--color-primary-6));
+      color: var(--color-neutral-0);
+      text-align: center;
+      padding: 2rem 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    .imagem-receita img {
+      width: 100%;
+      max-width: 500px;
+      display: block;
+      margin: 2rem auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .dicas {
+      width: 85%;
+      max-width: 800px;
+      margin: 0 auto 2rem;
+      background-color: var(--color-primary-2);
+      padding: 1.8rem 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-left: 6px solid var(--color-primary-6);
+      transition: all 0.3s ease;
+    }
+
+    .dicas:hover {
+      transform: scale(1.01);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      color: var(--color-primary-6);
+      border-bottom: 2px solid var(--color-primary-3);
+      padding-bottom: .5rem;
+      margin-bottom: 1rem;
+    }
+
+    ul, ol {
+      margin-left: 1.5rem;
+      line-height: 1.8;
+    }
+
+    footer {
+      text-align: center;
+      background-color: var(--color-primary-3);
+      color: var(--color-neutral-1);
+      padding: 1rem;
+      font-size: 0.9rem;
+      box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+    }
+
+    .btn-default{
+        margin-left: 600px;
+        margin: 10px 0 15px 600px;
+    }
+  </style>
 </head>
 
 <body>
+  <header>
+    <h1>Receita de Lasanha ao Molho Branco</h1>
+  </header>
 
+  <main>
+    <section class="imagem-receita">
+      <img src="src/images/lasanhaaomolhobranco.jpeg" alt="Imagem da receita">
+    </section>
 
-        <header>
-            <nav id="navbar">
-                <i class="fa-solid fa-burger" id="nav_logo"> food</i>
+    <section class="dicas">
+      <h2>Ingredientes</h2>
+      <ul>
+        <li>Farinha de trigo</li>
+        <li>Manteiga</li>
+        <li>Leite</li>
+        <li>Catupiry</li>
+        <li>Carne moída</li>
+        <li>Cebola</li>
+        <li>Alho</li>
+        <li>Cenoura</li>
+        <li>Vinho branco</li>
+        <li>Tomates batidos</li>
+        <li>Queijo e presunto</li>
+        <li>Parmesão e alho para finalizar</li>
+      </ul>
+    </section>
 
-                <ul id="nav_list">
-                    <li class="nav-item active">
-                        <a href="#home">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#menu">Receitas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#testimonials">Avaliações</a>
-                    </li>
-                </ul>
+    <section class="dicas">
+      <h2>Modo de Preparo</h2>
+      <ol>
+        <li>Faça o molho branco dourando a farinha na manteiga.</li>
+        <li>Adicione o leite e os temperos, mexendo bem.</li>
+        <li>Junte o catupiry e reserve.</li>
+        <li>Prepare o molho bolonhesa dourando a carne moída no óleo ou azeite.</li>
+        <li>Acrescente cebola, alho, cenoura e vinho branco, deixando evaporar.</li>
+        <li>Adicione os tomates batidos e tempere a gosto.</li>
+        <li>No refratário coloque uma colher do molho bolonhesa e a massa por cima.</li>
+        <li>Coloque mais molho bolonhesa, queijo, presunto e o molho branco.</li>
+        <li>Repita as camadas, finalizando com molho branco.</li>
+        <li>Salpique parmesão e alho.</li>
+        <li>Leve ao forno até gratinar.</li>
+      </ol>
+    </section>
+  </main>
 
-    <body>
-               
-     </html>
+  <a href="index.html"> <button class="btn-default">
+                            <i >Home</i>
+                        </button></a>
+
+  <footer>
+    <p>| SENAI Food</p>
+  </footer>
+</body>
+</html>
+    
+</body>
+</html>
